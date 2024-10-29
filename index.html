@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-first-color border-bottom py-2 px-4 sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="#"><img src="./assets/images/logo.png" alt="logo"></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fs-6"> </span><span> menu</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto text-uppercase ">
+          <li class="nav-item">
+            <a class="nav-link  " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="#">About</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#service">Service</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- start hero -->
+  <section class="hero d-flex justify-content-center align-items-center bg-first-color ">
+    <div id="carouselExampleAutoplaying" class="carousel slide container-fluid " data-bs-ride="carousel">
+      <div class="carousel-inner ">
+        <div class="carousel-item active ">
+          <div class="row justify-content-center flex-row-reverse">
+            <div class="col-lg-4 clo-md-12 text-center">
+              <img src="./assets/images/main-banner1.jpg" alt="carousel image" >
+            </div>
+            <div class="col-lg-5 clo-md-12  pt-4 center">
+              <h2 class="h2-size">life of the wild</h2>
+              <p class="lh-lg my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Soluta aliquam officiis perspiciatis numquam asperiores at, 
+                reprehenderit hic fugiat a in culpa. Ullam.
+              </p>
+              <button class="btn-style  py-2 px-4 btn-hover">READ MORE <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <div class="row justify-content-center flex-row-reverse">
+            <div class="col-lg-4 clo-md-12 text-center">
+              <img src="./assets/images/main-banner2.jpg" alt="carousel image" >
+            </div>
+            <div class="col-lg-5  clo-md-12  pt-4 center">
+              <h2 class="h2-size">Birds Gonna Be Happy</h2>
+              <p class="lh-lg my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Soluta aliquam officiis perspiciatis numquam asperiores at,  
+                reprehenderit hic fugiat a in culpa. Ullam.
+              </p>
+              <button class="btn-style py-2 px-4 btn-hover">READ MORE <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev  " type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <i class="fa-solid fa-arrow-left border p-3 rounded-circle text-secondary"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next  " type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <i class="fa-solid fa-arrow-right border p-3 rounded-circle text-secondary" aria-hidden="true"></i>
+        <span class="visually-hidden ">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- end hero -->
+  <main>
+
+    <section class="bg-second-color py-5">
+      <div class="container">
+        <div class="row">
+          <div class="flex-wrap text-center">
+            <a href="#"><img src="./assets/images/client-image1.png" alt=""></a>
+          <a href="#"><img src="./assets/images/client-image2.png" alt=""></a>
+          <a href="#"><img src="./assets/images/client-image3.png" alt=""></a>
+          <a href="#"><img src="./assets/images/client-image4.png" alt=""></a>
+          <a href="#"><img src="./assets/images/client-image5.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="featured-books bg-first-color text-center py-5">
+      <p class="paragraph-color ">some quality items</p>
+      <div class="container ">
+        <h3 class="position-relative line fs-2 ">Featured Books</h3>
+        <div class="row cards g-3 justify-content-center my-4 py-3 border-bottom " id="featured-row">
+
+        </div>
+        <div class="text-end">
+          <a class="border-0 mt-4 text-decoration-none text-dark" href="#">View All Products <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      
+    </section>
+    <!--  -->
+    <section class="bg-second-color py-5">
+      <div class="container">
+        <div class="row py-3 " id="best-selling-content">
+          
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    
+    <section class="popular-books bg-first-color text-center py-5">
+      <p class="paragraph-color ">some quality items</p>
+      <div class="container">
+        <h3 class="position-relative line fs-2 my-4">Popular Books</h3>
+        <ul class="nav justify-content-center mb-5">
+          <li class="nav-item p-3">
+            <a class="paragraph-color text-decoration-none" aria-current="page" href="#">All Genre</a>
+          </li>
+          <li class="nav-item p-3">
+            <a class="paragraph-color text-decoration-none" href="#">Business</a>
+          </li>
+          <li class="nav-item p-3">
+            <a class="paragraph-color text-decoration-none" href="#">Technology</a>
+          </li>
+          <li class="nav-item p-3">
+            <a class="paragraph-color text-decoration-none" href="#">Romantic</a>
+          </li>
+          <li class="nav-item p-3">
+            <a class="paragraph-color text-decoration-none" href="#">Adventure</a>
+          </li>
+          <li class="nav-item p-3">
+            <a class="paragraph-color text-decoration-none" href="#">Fictional</a>
+          </li>
+          
+        </ul>
+        <div class="row  justify-content-center " id="popular-books">
+
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="subscribe bg-second-color py-5">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-sm-12">
+            <h3 class="fs-1 my-5 position-relative line-title">Subscribe To Our Newsletter</h3>
+          </div>
+          <div class="col-lg-4 col-sm-12 border-bottom ps-3 ">
+            <p class="mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Ipsam quae, eum fugiat temporibus 
+              repudiandae eos amet est. Dignissimos, alias molestias!
+            </p>
+            <form class="pb-4 d-flex justify-content-between">
+              <input type="email" class="border-0 w-75 bg-second-color" placeholder="Enter your email address her">
+              <button class="border-0 fw-bold bg-second-color ">SEND <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="bg-first-color py-5 border-bottom">
+      <div class="container">
+        <div class="row  px-3 " >
+          <footer class="row py-5 px-0 ">
+            <div class="col-lg-4 mb-4 text-center">
+              <a class="" href="#"><img src="./assets/images/logo.png" alt="footer-logo " ></a>
+              <p class="w-75  m-auto my-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, 
+                quod ratione qui inventore vero porro ipsum architecto, consequuntur 
+                fuga beatae reprehenderit repellendus quos ea esse repudiandae laudantium 
+                tempora, illum dignissimos.
+              </p>
+            </div>
+            <div class="col-lg-2 mb-4 text-center">
+              <h5 class="mb-3">About Us</h5>
+              <ul class="nav flex-column">
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">Vision</a></li>
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">articles</a></li>
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">careers</a></li>
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">service terms</a></li>
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">donate</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 mb-4 text-center">
+              <h5 class="mb-3">Discover</h5>
+              <ul class="nav flex-column">
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">Books</a></li>
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">Authors</a></li>
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">Subjects</a></li>
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">Advanced Search</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 mb-4 text-center">
+              <h5 class="mb-3">My Account</h5>
+              <ul class="nav flex-column">
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">Sign In</a></li>
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">View Cart</a></li>
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">My Wishtlist</a></li>
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">Track My Order</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 mb-4 text-center">
+              <h5 class="mb-3">Help</h5>
+              <ul class="nav flex-column">
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">Help center</a></li>
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">Report a problem</a></li>
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">Suggesting edits</a></li>
+                <li class=" mb-3"><a href="#" class="nav-link p-0 text-body-secondary">Contact us</a></li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </section>
+    <div class=" second-footer py-5  bg-first-color">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 text-sm-center">
+            <p class=" ">&copy; 2022 All rights reserved.Free HTML Template by <a href="#" class="a-color text-decoration-none">TemplatesJungle</a></p>
+          </div>
+          <div class="col-md-6 col-sm-12 px-4">
+            <div class="icons text-end fs-5">
+              <a href="#"  class="ms-3 a-color"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"  class="ms-3 a-color"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"  class="ms-3 a-color"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"  class="ms-3 a-color"><i class="fa-brands fa-square-behance"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+  </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
