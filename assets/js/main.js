@@ -68,10 +68,7 @@ fetch('https://wolnelektury.pl/api/books/studnia-i-wahadlo/')
             <h4 class="fs-1 fw-bold position-relative line-title mb-5"> Best Selling Books</h4>
             <p class="pt-5 paragraph-color"> By ${result.authors[0].name}</p>
             <h4 class=" my-4 "> ${result.title}</h4>
-            <p class="my-5 paragraph-color ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                tempora ducimus  iste facilis 
-                ipsum porro reprehenderit earum quibusdam.
-            </p>
+            <p class="my-5 paragraph-color ">${result.fragment_data.html}</p>
             <a class="border-0 fw-bold text-decoration-none text-dark" href="#">Shop It Now <i class="fa-solid fa-arrow-right"></i></a>
         </div>
         `
